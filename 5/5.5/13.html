@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <script>
+
+  function groupById(array) {
+    return array.reduce((object, value) => {
+      object[value.id] = value;
+      return object;
+    }, {}
+    )
+  }
+
+  </script>
+</body>
+
+</html>

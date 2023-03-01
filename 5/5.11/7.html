@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <script>
+
+  function getSecondsToTomorrow() {
+    let now = new Date();
+    let hour = now.getHours();
+    let min = now.getMinutes();
+    let sec = now.getSeconds();
+    let totalSecondsToday = (hour * 60 + min) * 60 + sec;
+    let totalSecondsInADay = 86400;
+    return totalSecondsInADay - totalSecondsToday;
+  }
+ 
+  </script>
+</body>
+
+</html>
